@@ -9,25 +9,25 @@ FriendlyChat is a real-time chat application with AI-powered features like senti
 - Speech-to-text with Deepgram AI API
 
 ## Tech Stack
--   React frontend
--   Node.js + Express backend
--   Redis for caching
--   Socket.io for real-time communication
--   GPT 3.5 for sentiment analysis
--   Deepgram for speech-to-text
+- React frontend
+- Node.js + Express backend
+- Redis for caching
+- Socket.io for real-time communication
+- GPT 3.5 for sentiment analysis
+- Deepgram for speech-to-text
 
 ![friendlychat tech stack](https://i.ibb.co/TcG1ygc/Friendlychat-Tech-Stack.png)
 
-**Real-time Messaging**
+**Real-time Messaging**  
 Implemented real-time messaging using Socket.io. Users can send and receive messages instantly without page refreshes.
 
-**Message Caching**
+**Message Caching**  
 Implemented a message cache layer using Redis to reduce load on OpenAI API. Frequently accessed messages are stored in Redis for low latency retrieval.
 
-**Sentiment Analysis**
+**Sentiment Analysis**  
 Integrated GPT 3.5 to analyze the sentiment of chat messages. This provides a layer of filtering to flag messages with toxic or harmful language. Helps ensure conversations remain friendly.
 
-**Speech-to-Text**
+**Speech-to-Text**  
 Used Deepgram's speech recognition API to add speech-to-text capabilities. Users can dictate messages which are transcribed and sent in real-time.
 
 ## Getting Started
@@ -58,7 +58,7 @@ Start your local Redis instance.
 
     redis-server
 
-Run the app.
+Run the app from both `friendlychat-frontend` and `friendlychat-backend`.
 
     npm run start
 
