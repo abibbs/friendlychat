@@ -50,6 +50,7 @@ Create a `.env` file in `friendlychat-backend` with your [Deepgram](https://deep
     DEEPGRAM_API_KEY='YOUR_API_KEY'
     OPEN_API_KEY='YOUR_API_KEY'
     CHAT_URI='http://localhost:3000'
+
 Create a `.env` file in `friendlychat-frontend` with the URI for the Socket.io connection.
 
     REACT_APP_SOCKETIO_URL='http://localhost:4000'
@@ -60,6 +61,7 @@ Start your local Redis instance.
 
 Run the app from both `friendlychat-frontend` and `friendlychat-backend`.
 
-    npm run start
+    cd friendlychat-frontend && npm run start
+    cd friendlychat-backend && npm run start
 
-The app will be running on `http://localhost:3000`.
+The client will be running on `http://localhost:3000` and the server will be running on `http://localhost:4000`.
