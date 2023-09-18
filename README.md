@@ -41,6 +41,7 @@ Used Deepgram's speech recognition API to add speech-to-text capabilities. Users
     $ git clone https://github.com/abibbs/friendlychat.git
     $ cd friendlychat
     $ cd friendlychat-frontend
+    $ npm install
     $ cd ..
     $ cd friendlychat-backend
     $ npm install
