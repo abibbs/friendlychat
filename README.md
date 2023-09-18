@@ -38,7 +38,7 @@ Used Deepgram's speech recognition API to add speech-to-text capabilities. Users
 -   GPT 3.5 API key
 
 ### Installation
-    $ git clone https://github.com/yourname/friendlychat.git
+    $ git clone https://github.com/abibbs/friendlychat.git
     $ cd friendlychat
     $ cd friendlychat-frontend
     $ cd ..
