@@ -57,11 +57,11 @@ Create a `.env` file in `friendlychat-frontend` with the URI for the Socket.io c
 
 Start your local Redis instance.
 
-    redis-server
+    $ redis-server
 
 Run the app from both `friendlychat-frontend` and `friendlychat-backend`.
 
-    cd friendlychat-frontend && npm run start
-    cd friendlychat-backend && npm run start
+    $ cd friendlychat-frontend && npm run start
+    $ cd friendlychat-backend && npm run start
 
 The client will be running on `http://localhost:3000` and the server will be running on `http://localhost:4000`.
