@@ -7,10 +7,7 @@ import ChatFooter from './ChatFooter';
 const ChatPage = ({socket}) => {
   const [messages, setMessages] = useState([]);
 
-  useEffect(() => {
-    // This subscribes to messageResponse events on page load (and page changes)
-    socket.on('messageResponse', (data) => setMessages([...messages, data]));
-  });
+  useSockets(socket, messages, setMessages);
 
   return (
     <div className='chat'>
@@ -22,5 +19,12 @@ const ChatPage = ({socket}) => {
     </div>
   );
 };
+
+function useSockets(socket, messages, setMessages) {
+  useEffect(() => {
+    // This subscribes to messageResponse events on page load (and page changes)
+    socket.on('messageResponse', (data) => setMessages([...messages, data]));
+  });
+}
 
 export default ChatPage;
